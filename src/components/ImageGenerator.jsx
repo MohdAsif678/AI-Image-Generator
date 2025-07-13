@@ -23,7 +23,7 @@ const ImageGenerator = () => {
             model: "dall-e-3",
             "Content-Type": "application/json",
             Authorization:
-              "Bearer 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",
+              `Bearer ${process.env.key}`,
             "User-Agent": "Chrome",
           },
           body: JSON.stringify({
